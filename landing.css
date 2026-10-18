@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+
+/* Navbar */
+.navbar {
+    background-color: #12355b;
+}
+
+/* Navigation links */
+.navbar-links {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    font-size: 18px;
+}
+ .navbar-links .nav-link:hover {
+    color: white ;
+ }
+
+/* Small screens */
+@media (max-width: 991px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+  
+}
+/* About dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #12355b !important;
+    min-width: 180px;
+    padding: 10px 0;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #e4e6e9;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+    background-color: #eceef1;
+    color: #12355b;
+}
+
+/* Hero */
+
+.hero {
+    height: 600px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    filter:blur(2px);
+    transform: scale(1.02);
+}
+
+
+/* Text on image */
+
+.hero-content {
+    position: absolute;
+
+    top: 50%;
+    left: 80px;
+
+    transform: translateY(-50%);
+
+    width: 500px;
+    color: rgb(235, 231, 231);
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 12px 25px;
+    margin-right: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+ .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px;
+    gap: 50px;
+    background-color: #ebeef3;
+} 
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    color: #12355b;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-content button {
+    padding: 12px 25px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #12355b;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.why-us {
+    padding: 80px;
+}
+
+.why-us h2 {
+    font-size: 40px;
+    color: #12355b;
+    margin-bottom: 15px;
+}
+
+.why-text {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #12355b;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.programs {
+    padding: 80px;
+    background-color: #f5f7fa;
+}
+
+.programs h2 {
+    font-size: 40px;
+    color: #12355b !important;
+    margin-bottom: 15px;
+}
+
+.program-text {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #12355b !important;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #f5f7fa;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #f5f7fa;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card button {
+    background-color: #e8eff7;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #020508;
+}
+
+.admission {
+    padding: 80px;
+    text-align: center;
+
+    background-color: #12355b;
+    color: white;
+}
+
+.admission-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.admission h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.admission p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.admission-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.admission button {
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: white;
+    color: #12355b;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.admission button:hover {
+    transform: translateY(-5px);
+}
+
+.deadline {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.research {
+    padding: 80px;
+    background-color: white;
+}
+
+.research-heading {
+    max-width: 800px;
+    margin: auto;
+}
+
+.research-heading h2 {
+    font-size: 40px;
+    color: #12355b;
+    margin-bottom: 20px;
+}
+
+.research-heading p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+/* Research cards */
+.research .card h3 {
+    color: #f2f5f8;
+    margin-bottom: 15px;
+}
+
+.research .card p {
+    color: white;
+    line-height: 1.6;
+}
+
+
+.statistics {
+    padding: 50px 70px;
+    background-color: #f5f7fa;
+    text-align: center;
+    color: #12355b;
+}
+
+.statistics > .container > h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.statistics .card h2 {
+    color: white;
+}
+.statistics .card p {
+    color: white;
+}
+
+footer {
+    background-color: #153b63;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+    gap: 40px;
+    padding: 0 70px 40px;
+}
+
+.footer-container h2 {
+    margin-bottom: 15px;
+}
+
+.footer-container h3 {
+    margin-bottom: 20px;
+}
+
+.footer-container p {
+    line-height: 1.7;
+}
+
+.footer-links a,
+.footer-social a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ffffff44;
+}
+
+
+
+

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+.navbar {
+    background-color: #12355b;
+}
+
+/* Navigation links */
+.navbar-links {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-links .nav-link {
+    color: white;
+    font-size: 18px;
+}
+ .navbar-links .nav-link:hover {
+    color: white ;
+ }
+
+/* Small screens */
+@media (max-width: 991px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+  
+}
+/* About dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #12355b !important;
+    min-width: 180px;
+    padding: 10px 0;
+}
+
+/* Show dropdown when hovering */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #e4e6e9;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+    background-color: #eceef1;
+    color: #12355b;
+}
+
+
+
+/* About Hero */
+
+.about-hero {
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.about-hero h1 {
+    font-size: 45px;
+    color: #153b63;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 18px;
+}
+
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    color: #153b63;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+.university-life {
+    padding: 60px 20px;
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+.university-life h2 {
+    font-size: 35px;
+    color: #153b63;
+    margin-bottom: 20px;
+}
+
+.university-life p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.7;
+}
+/* Values */
+.values {
+    padding: 60px 20px;
+}
+
+.values > .container > h2 {
+    font-size: 35px;
+    color: #153b63;
+}
+
+.values .card {
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.values .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.values .card h3 {
+    margin-bottom: 15px;
+    color: #153b63;
+}
+
+.values .card p {
+    line-height: 1.6;
+}
+
+/* Footer */
+
+footer {
+    background-color: #153b63;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    padding: 0 20px 40px;
+}
+
+footer h2,
+footer h3 {
+    margin-bottom: 15px;
+}
+footer p {
+    line-height: 1.7;
+}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ffffff44;
+}

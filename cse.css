@@ -1,0 +1,488 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #12355b;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar-links .nav-link {
+    color: white;
+}
+
+.navbar-links .nav-link:hover {
+    color: #f4c542;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgb(3, 12, 51);
+
+    min-width: 250px;
+
+    padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 10px 15px;
+
+    color:white;
+
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+    color:#12355b
+}
+
+
+/* ================= HERO ================= */
+
+.cse-hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(18, 53, 91, 0.7),
+            rgba(18, 53, 91, 0.7)
+        ),
+        url("image/cse-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.cse-hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.cse-hero p {
+    font-size: 21px;
+}
+
+
+/* ================= COMMON SECTIONS ================= */
+
+.about-cse,
+.students,
+.programs,
+.facilities,
+.faculty {
+    padding: 80px 0;
+}
+
+.about-cse h2,
+.students h2,
+.why-cse h2,
+.programs h2,
+.research h2,
+.facilities h2,
+.faculty h2,
+.career h2 {
+    color: #12355b;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.about-cse p,
+.students p {
+    line-height: 1.8;
+
+    font-size: 17px;
+}
+
+
+/* ================= IMAGES ================= */
+
+.section-image {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* ================= STUDENTS ================= */
+
+.students {
+    background-color: #f5f7fa;
+}
+
+
+/* ================= WHY CSE ================= */
+
+.why-cse {
+    padding: 80px 0;
+
+    background-color: #f5f7fa;
+}
+
+.info-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+.info-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.info-card h3 {
+    color: #12355b;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= PROGRAMS ================= */
+
+.program-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.program-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.program-content {
+    padding: 30px;
+}
+
+.program-content h3 {
+    color: #12355b;
+
+    margin-bottom: 15px;
+}
+
+.program-content p {
+    line-height: 1.7;
+}
+
+.program-content button {
+    background-color: #12355b;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+.program-content button:hover {
+    background-color: #f4c542;
+
+    color: #12355b;
+}
+
+
+/* ================= RESEARCH ================= */
+
+.research {
+    padding: 80px 0;
+
+    background-color: #f5f7fa;
+}
+
+.research-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.research-card:hover {
+    transform: translateY(-8px);
+}
+
+.research-card img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+}
+
+.research-card h3 {
+    color: #12355b;
+
+    font-size: 20px;
+
+    padding: 20px 15px 5px;
+}
+
+.research-card p {
+    padding: 0 15px 20px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FACILITIES ================= */
+
+.facility-card {
+    background-color: #f5f7fa;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    height: 100%;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    color: #12355b;
+
+    font-size: 21px;
+
+    padding: 20px 15px 5px;
+}
+
+.facility-card p {
+    padding: 0 20px 25px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FACULTY ================= */
+
+.faculty {
+    background-color: #f5f7fa;
+}
+
+.faculty-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-8px);
+}
+
+.faculty-card img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.faculty-card h3 {
+    color: #12355b;
+
+    font-size: 20px;
+
+    margin-top: 15px;
+}
+
+.faculty-card p {
+    padding-bottom: 15px;
+}
+
+
+/* ================= CAREER ================= */
+
+.career {
+    padding: 70px 0;
+
+    background-color: white;
+
+    color:#12355b;
+}
+
+.career h2 {
+    color: #12355b;
+}
+
+.career-list {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.career-list span {
+    background-color: #12355b;
+
+    color: #edf0f3;
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #12355b;
+
+    color: white;
+
+    padding-top: 50px;
+}
+
+footer h2,
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+footer a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #f4c542;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.3);
+
+    margin-top: 30px;
+
+    padding: 20px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar-links {
+        gap: 10px;
+    }
+
+    .navbar-links .nav-link {
+        font-size: 14px;
+    }
+
+    .cse-hero h1 {
+        font-size: 32px;
+    }
+
+    .cse-hero p {
+        font-size: 17px;
+    }
+
+}
